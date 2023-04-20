@@ -1,11 +1,13 @@
 # PS-STUDY-LION
 
+![img.png](img.png)
+
 ### 👩‍💻 Member
 
 - [yooyouny](http://github.com/yooyouny)
-- [](https://github.com/GangminRYOU)
-- [](https://github.com/jsl1113)
-- [](https://github.com/kse0312)
+- [kangmin](https://github.com/GangminRYOU)
+- [sseni](https://github.com/jsl1113)
+- [kse](https://github.com/kse0312)
 
 
 ### 🚶‍♂️ Progress
