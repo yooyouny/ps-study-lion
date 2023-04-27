@@ -7,14 +7,14 @@ class Solution {
 		int[] dx = {-1, 1, 0, 0};// 상하좌우 탐색
 		int[] dy = {0, 0, -1, 1};
 
-		while(!queue.isEmpty()){ // 큐가 빌때까지 진행
-			int[] position = queue.poll(); // x, y좌표 값
+		while(!queue.isEmpty()){// 큐가 빌때까지 진행
+			int[] position = queue.poll();// x, y좌표 값
 
 			for(int i=0; i<4; i++){
 				int nx = position[0] + dx[i];// 좌표 이동
 				int ny = position[1] + dy[i];
 
-				if(nx < 0 || ny < 0 || nx >= 5 || ny >= 5 || (nx == x && ny == y))// 범위를 벗어나거나 중심좌표와 같을 경우는 제외
+				if(nx < 0 || ny < 0 || nx >= 5 || ny >= 5 || (nx == x && ny == y))// 범위를 벗어나거나 기준좌표와 같을 경우는 제외
 					continue;
 
 				int direction = Math.abs(nx - x) + Math.abs(ny - y);// 맨해튼 거리
@@ -33,7 +33,7 @@ class Solution {
 
 		for(int i=0; i<places.length; i++){
 			String[] place = places[i];
-			boolean result = true; // 결과가 0아님 1이므로 boolean 타입으로 선언
+			boolean result = true;// 결과가 0아님 1이므로 boolean 타입으로 선언
 
 			for(int x=0; x<5; x++){// place의 길이는 5로 고정
 				for(int y=0; y<5; y++){
