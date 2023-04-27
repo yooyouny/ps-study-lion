@@ -5,7 +5,7 @@
 ### 👩‍💻 Member
 
 - [yooyouny](http://github.com/yooyouny)
-- [kangmin](https://github.com/GangminRYOU)
+- [gangmin](https://github.com/GangminRYOU)
 - [sseni](https://github.com/jsl1113)
 - [kse](https://github.com/kse0312)
 
