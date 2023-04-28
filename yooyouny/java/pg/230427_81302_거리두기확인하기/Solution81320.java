@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class Solution81320 {
 	public boolean bfs(String[] place, int x, int y){
 		Queue<int[]> queue = new LinkedList<>();// 좌표 배열을 넣을 큐
 		queue.offer(new int[]{x, y});
