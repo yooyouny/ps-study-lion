@@ -1,4 +1,4 @@
-class Solution {
+class Solution12949 {
 	public int[][] solution(int[][] arr1, int[][] arr2) {
 		int[][] answer = new int[arr1.length][arr2[0].length];// 행렬의 크기는 앞쪽의 행 * 뒷쪽의 열
 

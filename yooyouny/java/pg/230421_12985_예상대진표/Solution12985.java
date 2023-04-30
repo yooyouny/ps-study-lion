@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution
+class Solution12985
 {
 	public int solution(int n, int a, int b)
 	{
