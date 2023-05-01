@@ -1,6 +1,6 @@
 package java.pg._230425_12949_행렬의곱셈;
 
-
+//https://school.programmers.co.kr/learn/courses/30/lessons/12932?language=java
 
 public class Solution_12949 {
     //행렬의 곱셈 크기는 arr1의 가로 길이 x arr2의 세로 길이
