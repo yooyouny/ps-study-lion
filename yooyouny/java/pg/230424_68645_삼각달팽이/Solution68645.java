@@ -1,9 +1,8 @@
-import java.util.*;
 /*
 * 시간복잡도: O(n^2)
 * 공간복잡도: O(n^2)
 * */
-class Solution {
+class Solution68645 {
 	public int[] solution(int n) {
 		int size = (n+1) * n / 2; //결과 배열의 크기는 1부터 n까지의 합이므로
 

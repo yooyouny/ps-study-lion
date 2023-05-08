@@ -3,15 +3,16 @@ import java.util.*;
 * 시간복잡도: O(n^2) // 이중포문 사용
 * 공간복잡도: O(n) // 입력값에 따라 저장하는 크기도 달라짐
 * */
-class Point { // 좌표값 저장을 위한 클래스 생성
-	long x;
-	long y;
-	public Point(long x, long y){
-		this.x = x;
-		this.y = y;
+
+class Solution87377 {
+	class Point { // 좌표값 저장을 위한 클래스 생성
+		long x;
+		long y;
+		public Point(long x, long y){
+			this.x = x;
+			this.y = y;
+		}
 	}
-}
-class Solution {
 	long[] temp; //좌표값 저장을 위한 임시변수, 다른 메소드에서 활용하기 위해 전역변수로 선언
 	public Boolean findIntersection(int[] point1, int[] point2){ //교점이 있는지 확인하고 있으면 true, 없으면 false 반환하는 메소드
 		long a = point1[0]; // input값이 최대 100000만 10만 * 10만이 될 수 있어서 long으로 저장
