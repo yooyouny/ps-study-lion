@@ -4,8 +4,8 @@ class Solution42840 {
 		int idx = 0;// pattern의 길이를 다시 0으로 리셋해주기 위해 인덱스를 변수로 뺌
 		int score = 0;// 해당 패턴으로 answers와 매핑했을때 반환되는 점수 변수
 		for(int i=0; i<answers.length; i++){// answers 값들을 순차적으로 접근하기 위한 For문
-			if(pattern[idx] == answers[i]) score++;
-			idx = (++idx) % pattern.length; // 패턴의 다음 인덱스 접근을 위해 증가시켜주고 만약 패턴의 길이를 벗어날 경우 다시 0으로 리셋하기 위해 나머지 연산 활용
+			if(pattern[idx++] == answers[i]) score++;
+			idx %= pattern.length; // 패턴의 다음 인덱스 접근을 위해 증가시켜주고 만약 패턴의 길이를 벗어날 경우 다시 0으로 리셋하기 위해 나머지 연산 활용
 		}
 		return score;
 	}
