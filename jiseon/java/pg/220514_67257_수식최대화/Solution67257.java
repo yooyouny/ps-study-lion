@@ -76,7 +76,7 @@ public class Solution67257 {
                 }
             }
         }
-        return Math.abs(cOperand.get(0));
+        return Math.abs(cOperand.get(0));                                                 // 계산이 종료되면 피연산자 리스트에 숫자 하나만 남음, 0번째 값을 절댓값 계산하여 리턴
     }
 
     public Long calc(Long num1, Long num2, String op) {    // 기호에 따라 단순 수식 계산 메소드
