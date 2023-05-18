@@ -1,5 +1,6 @@
 class Solution {
   //행과 열을 곱셈으로 계산해 더한 값-> 행렬의 배열의 요소값 구하는 함수
+  //review
 	public static int proc(int[] row, int[] col){
         int sum = 0;
         for(int i = 0; i < row.length; i++){
