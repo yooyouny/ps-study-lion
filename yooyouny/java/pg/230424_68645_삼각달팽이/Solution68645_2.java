@@ -8,7 +8,7 @@ import java.util.*;
 * 	- filter(i -> i != 0) 조건에 해당하는 애들만 필터링
 * 	- toArray(); 배열로 반환
  */
-class Solution_2 {
+class Solution68645_2 {
 	public int[] solution(int n) {
 		int size = n * (n+1) / 2;
 		int[] answer = new int[size];
