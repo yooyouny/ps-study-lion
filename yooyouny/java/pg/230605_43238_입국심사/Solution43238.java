@@ -1,4 +1,4 @@
-public class Solution {
+public class Solution43238 {
 	private boolean isValid(long t, int n, int[] times) {
 		long c = 0;// 시간 내에 심사 가능한 사람 수
 		for (int time : times) {
