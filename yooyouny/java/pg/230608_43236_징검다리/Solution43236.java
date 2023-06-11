@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class Solution43236 {
 	private boolean isValid(int mid, int[] rocks, int n){
 		int previous = 0;// 이전바위
 		int cnt = 0;
