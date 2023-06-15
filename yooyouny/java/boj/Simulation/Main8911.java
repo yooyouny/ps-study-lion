@@ -3,43 +3,67 @@ package java.boj.Simulation;
 import java.util.Scanner;
 
 public class Main8911 {
-	static char[][] lcd;
-	private static void vertical(int height, int start){
-		for(int j=height-1; j>=0; j--){
-			lcd[j][start] = '|';
+	static int direction, nowR, nowC, minR, minC, maxR, maxC;
+	private static void move(String order){
+		int[] dx = {};
+		for(char ch : order.toCharArray()){
+			switch(ch){
+				case 'F' -> {
+					if(direction == 1){
+						nowC++;
+					}
+					else if(direction == 0){
+						nowR++;
+					}
+					else if(direction == 3){
+						nowC--;
+					}
+					else if(direction == 2) {
+						nowR--;
+					}
+				}
+				case 'B' -> {
+					if(direction == 1){
+						nowC--;
+					}
+					else if(direction == 0) {
+						nowR--;
+					}
+					else if(direction == 3){
+						nowC++;
+					}
+					else if(direction == 2) {
+						nowR++;
+					}
+				}
+				case 'L' -> {
+					direction--;
+					if(direction == -1) direction = 3;
+				}
+				case 'R' -> {
+					direction++;
+					if(direction == 4) direction = 0;
+				}
+			}
+			maxC = Math.max(maxC, nowC);
+			maxR = Math.max(maxR, nowR);
+			minC = Math.min(minC, nowC);
+			minR = Math.min(minR, nowR);
 		}
 	}
-
-	private static void display(char num, int start){
-		if(num == 1){
-
-		}else if(num == 2){
-
-		}else if(num == 3){
-
-		}else if(num == 4){
-
-		}else if(num == 5){
-
-		}
-	}
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int s = sc.nextInt();
-		String n = sc.next();
-		lcd = new char[2*s + 3][(s + 2) * n.length() + (n.length() - 1)];
-		int idx = 0;
-		for(int i=0; i<n.length(); i++){
-			char num = n.charAt(i);
-			if(num == 1){
-				display(num, idx + 3);
-				idx+=2;
-			}else{
-				display(num, idx);
-				idx+=(s+2) + 1;
-			}
+		int T = sc.nextInt();
+		for(int i=0; i<T; i++){
+			direction = 0;// 북쪽
+			nowC = 0;
+			nowR = 0;
+			minC = 0;
+			minR = 0;
+			maxC = 0;
+			maxR = 0;
+			move(sc.next());
+			System.out.println((maxR - minR) * (maxC - minC));
 		}
 	}
-
 }
