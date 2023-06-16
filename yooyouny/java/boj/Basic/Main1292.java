@@ -1,4 +1,4 @@
-package java.boj.Math;
+package java.boj.Basic;
 
 import java.io.BufferedReader;
 import java.io.IOException;
