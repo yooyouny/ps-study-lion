@@ -1,24 +1,17 @@
-package java.boj.Simulation;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Set;
-
 public class Main11559 {
 	static char[][] map, copy;
 	static boolean[][] chk;
 	static int[] dx = {0, 0, -1, 1};
 	static int[] dy = {1, -1, 0, 0};
-
 	static int cnt;
 
 	private static void dfs(int r, int c, Set<int[]> points){
 		chk[r][c] = true;
-
-		// 기저조건을 모르겠어.. 여기는 개수 반환만 하는 곳이야
-
 		for(int i=0; i<4; i++) {
 			int nr = r + dy[i];
 			int nc = c + dx[i];
@@ -28,7 +21,6 @@ public class Main11559 {
 				dfs(nr, nc, points);
 			}
 		}
-
 	}
 	private static void pop(Set<int[]> points){
 		for(int[] point : points){
@@ -54,30 +46,22 @@ public class Main11559 {
 		}
 	}
 	private static boolean find(int column){
-		for(int i=11; i>=0; i--){
-			if(map[i][column] != '.'){
+		boolean result = false;
+		for(int i=11; i>=0; i--) {
+			if (map[i][column] != '.') {
 				chk = new boolean[12][6];
 				Set<int[]> points = new HashSet<>();
 				points.add(new int[]{i, column});
 				cnt = 1;
 				dfs(i, column, points);
-				if(cnt >= 4) {
+				if (cnt >= 4) {
 					pop(points);
-					return true;
+					result = true;
 				}
 			}
 		}
-		return false;
+		return result;
 	}
-	private static void printMap(){
-		for(char[] ch : map){
-			for (char c : ch) {
-				System.out.print(c);
-			}
-			System.out.println();
-		}
-	}
-
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		map = new char[12][6];
