@@ -1,4 +1,4 @@
-package java1.boj.Simulation;
+package java.boj.Simulation;
 
 import java.util.Scanner;
 

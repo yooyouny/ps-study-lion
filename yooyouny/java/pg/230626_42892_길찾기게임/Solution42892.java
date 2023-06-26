@@ -3,6 +3,7 @@ class Solution42892 {
 	static class Node{
 		public int x;
 		public int y;
+
 		public int value;
 		public Node left;// 이진트리라 left, rigit 노드 저장
 		public Node right;
@@ -76,6 +77,6 @@ class Solution42892 {
 		return new int[][]{
 			preOrder.stream().mapToInt(Integer::intValue).toArray(),
 			postOrder.stream().mapToInt(Integer::intValue).toArray()
-		};
+		};전
 	}
 }
