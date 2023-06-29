@@ -77,6 +77,6 @@ class Solution42892 {
 		return new int[][]{
 			preOrder.stream().mapToInt(Integer::intValue).toArray(),
 			postOrder.stream().mapToInt(Integer::intValue).toArray()
-		};전
+		};
 	}
 }

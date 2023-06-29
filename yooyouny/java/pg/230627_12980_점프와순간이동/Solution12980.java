@@ -4,7 +4,7 @@
  * 만약 n이 짝수일 경우 반절 거리부터 도착지까지는 순간이동으로만 계속 갈 수 있는 거리임
  * 따라서 짝수일 경우 반절처리를 해주고 홀수 인 경우엔 점프처리, 배터리증가 연산으로 처리해줌
  */
-/
+
 public class Solution12980 {
 	public int solution(int n) {
 		int usage = 0;
