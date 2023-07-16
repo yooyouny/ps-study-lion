@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230424_12949_행렬의곱셈" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230424_68645_삼각달팽이" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230424_87377_교점에별만들기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230427_81302_거리두기확인하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230429_12926_시저암호" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230429_12930_이상한문자만들기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230429_12932_자연수뒤집어배열로만들기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230429_60057_문자열압축" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230501_68935_3진법뒤집기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230504_12916_문자열내p와y의갯수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230504_12918_문자열다루기기본" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230504_181921_배열만들기2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230504_70129_이진변환반복하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230504_72410_신규아이디추천" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230504_81301_숫자문자열과영단어" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230508_68936_쿼드압축후갯수세기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230508_84512_모음사전" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230511_12946_하노이탑" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230511_42840_모의고사" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230511_42842_카펫" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230515_42839_소수찾기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230515_64064_불량사용자" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230515_67257_수식최대화" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230518_42748_K번쨰수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230518_68644_두개뽑아서더하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230522_12915_문자열내마음대로정렬하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230522_12917_문자열내림차순으로배치하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230522_42747_H-Index" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230525_42746_가장큰수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230525_72411_menu_renewal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230601_43238_입국심사" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230601_72412_순위검색" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/pg/230608_43236_징검다리" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
