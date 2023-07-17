@@ -34,8 +34,8 @@ public class Solution60060_ {
                 result.add(
                         // ex. < frame, frodo, front, frost, kakao > 에서,
                         // (fro로 시작하지 않는 문자열 위치 인덱스) - (fro로 시작하는 문자열 위치 인덱스) 값이 매치된 단어의 개수와 같음
-                        // fro** 인 경우 kakao의 위치 = 4,
-                        // fro 인 경우, frodo의 위치 = 1 반환됨
+                        // frozz 인 경우 kakao 자리 위치 = 4,
+                        // froaa 인 경우, frodo 자리 위치 = 1 반환됨
                         lowerBound(list, query.replace("?", "z"))
                                 - lowerBound(list, query.replace("?", "a"))
                 );
