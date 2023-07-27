@@ -65,6 +65,6 @@ class Solution67256 {
                 }
             }
         }
-        return sb.toString();// 문자열 형태로 반표
+        return sb.toString();// 문자열 형태로 반환
     }
 }
