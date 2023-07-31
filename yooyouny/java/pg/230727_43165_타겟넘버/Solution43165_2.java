@@ -1,4 +1,4 @@
-class Solution43165 {
+class Solution43165_2 {
     static int cnt;
     public int solution(int[] numbers, int target) {
         dfs(numbers, target, 0, 0);// 재귀함수 활용
