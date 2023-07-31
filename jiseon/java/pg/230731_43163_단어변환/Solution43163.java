@@ -7,7 +7,7 @@ public class Solution43163 {
     public int solution(String begin, String target, String[] words) {
         visit = new boolean[words.length];
         dfs(begin, target, 0, words); // 재귀 호출
-        return answer;
+        return answer == 51 ? 0 : answer;
     }
 
     public void dfs(String begin, String target, int cnt, String[] words) {
