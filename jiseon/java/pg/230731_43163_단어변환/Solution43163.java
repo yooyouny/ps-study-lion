@@ -1,7 +1,7 @@
 package com.example.javaproject3.psstudy;
 
 public class Solution43163 {
-    int answer = 0;
+    int answer = 51;
     boolean[] visit;
 
     public int solution(String begin, String target, String[] words) {
