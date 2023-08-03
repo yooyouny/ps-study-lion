@@ -6,8 +6,6 @@ public class Solution42884 {
     public int solution(int[][] routes) {
         int answer = 0;
         Arrays.sort(routes, (a, b) -> Integer.compare(a[1], b[1])); // 종료 위치를 기준으로 오름차순 정렬
-        for(int i=0; i < routes.length; i++)
-            System.out.print(Arrays.toString(routes[i]));
 
         int camera = -30_001; // 진입/진출 지점의 최솟값
         for(int[] route : routes){
