@@ -18,9 +18,11 @@ class Solution92341 {
     }
     private int calculatePrice(int totalUsageTime, int[] fees){
         int lastTime = parseTime("23:59");
-        totalUsageTime = totalUsageTime <= 0 ? totalUsageTime + lastTime : totalUsageTime; // 출차를 안한 경우 입차 시간 + 종료시간을 더해서 총주차시간을 계산해줌
-        double baseTime = totalUsageTime - fees[0] < 0 ? 0 : totalUsageTime - fees[0];// 기본시간보다 적게 주차했으면 추가 시간을 0으로 갱신
-        return fees[1] + (int) Math.ceil(baseTime / fees[2]) * fees[3];// 기본요금 + 추가요금(추가시간/단위시간 * 단위요금)
+        totalUsageTime = totalUsageTime <= 0 ? totalUsageTime + lastTime : totalUsageTime;// 출차를 안한 경우 입차 시간 + 종료시간을 더해서 총주차시간을 계산해줌
+
+        int additionalTime = Math.max(totalUsageTime - fees[0], 0);// 기본시간보다 적게 주차했으면 추가시간은 없음
+        int additionalFee = (int) Math.ceil(additionalTime / fees[2]) * fees[3];// 추가요금(추가시간 / 단위시간 * 단위요금) 계산
+        return fees[1] + additionalFee;// 기본요금 + 추가요금
     }
     private int parseTime(String time) {// "00:00" 형태의 문자열을 분으로 변환
         int hour = Integer.parseInt(time.substring(0, 2));
