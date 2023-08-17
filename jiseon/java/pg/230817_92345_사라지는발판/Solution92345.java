@@ -24,8 +24,8 @@ public class Solution92345 {
     }
     public Result dfs(int ax, int ay, int bx, int by, int cnt){ // a : 해당 턴, b : 다음 턴
         boolean win = false;  // 이기는 케이스가 있는지를 위한 boolean 변수
-        int win_cnt = 5 * 5;  // 움직인 횟수의 최댓값
-        int lost_cnt = cnt;
+        int win_cnt = 5 * 5;  // 이길 경우, 움직인 횟수의 최솟값
+        int lost_cnt = cnt;  // 질 경우, 움직인 횟수의 최댓값
 
         if(map[ax][ay] == 1){
             for (int i = 0; i < 4; i++) {
