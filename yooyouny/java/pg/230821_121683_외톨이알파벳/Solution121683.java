@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution15008 {
+class Solution121683 {
     public String solution(String input_string) {
         Set<Character> visited = new HashSet<>();// 중복체크 set
         Set<Character> alone = new TreeSet<>();// 외톨이숫자 set
