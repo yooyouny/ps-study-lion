@@ -21,9 +21,7 @@ public class Solution121690 {
         q.offer(new int[]{0, 1, 1});
         arr[0][1][1] = 0;
 
-        int cnt = 0;
         while (!q.isEmpty()) {
-            cnt++;
             int[] current = q.poll();
             int use = current[0];
             int y = current[1];
@@ -48,7 +46,6 @@ public class Solution121690 {
                 }
             }
         }
-        System.out.println(cnt);
         return (arr[1][n][m] != Integer.MAX_VALUE) ? arr[1][n][m] : -1;
     }
 
