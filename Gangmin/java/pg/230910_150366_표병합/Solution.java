@@ -15,8 +15,10 @@ public class Solution {
     }
     static String[][] values = new String[51][51];
     static Position[][] merge = new Position[51][51];
+    //print 결과를 저장할 queue
     Queue<String> result = new LinkedList<>();
     public String[] solution(String[] commands) {
+	    //merge 배열 초기화
         for (int i = 1; i <=50 ; i++) {
             for (int j = 1; j <= 50; j++) {
                 merge[i][j] = new Position(i, j);
@@ -26,12 +28,14 @@ public class Solution {
             StringTokenizer commandTokens = new StringTokenizer(command);
             String commandType = commandTokens.nextToken();
             if(commandType.equals("UPDATE")){
+		    //좌표가 주어지는 경우
                 if(commandTokens.countTokens() == 3){
                     int r = Integer.parseInt(commandTokens.nextToken());
                     int c = Integer.parseInt(commandTokens.nextToken());
                     String value = commandTokens.nextToken();
                     processUpdateCommand(r,c,value);
                 }else {
+			//값이 주어지는 경우
                     String target = commandTokens.nextToken();
                     String toChange = commandTokens.nextToken();
                     processUpdateCommand(target, toChange);
@@ -82,12 +86,15 @@ public class Solution {
                     merge[i][j] = new Position(valueRow1, valueCol1);
             }
         }
+	//같은 위치 병합이면 변경 안함
         if(valueRow1 != valueRow2 || valueCol1 != valueCol2){
+		//한쪽이 비면 안 빈 쪽 값으로 채워 넣기
             if(!Objects.equals(values[valueRow1][valueCol1], null) && Objects.equals(values[valueRow2][valueCol2], null)){
                 values[valueRow2][valueCol2] = values[valueRow1][valueCol1];
             } else if (Objects.equals(values[valueRow1][valueCol1], null) && !Objects.equals(values[valueRow2][valueCol2], null)) {
                 values[valueRow1][valueCol1] = values[valueRow2][valueCol2]; 
-            } else if (!Objects.equals(values[valueRow1][valueCol1], null) && !Objects.equals(values[valueRow2][valueCol2], null)) {
+		//둘다 값이 있는 경
+            } else if (!Objects.equ우als(values[valueRow1][valueCol1], null) && !Objects.equals(values[valueRow2][valueCol2], null)) {
                 values[valueRow2][valueCol2] = values[valueRow1][valueCol1]; 
             }
         }
@@ -99,6 +106,7 @@ public class Solution {
         String keepOriginal = values[valueRow][valueCol];
         for (int i = 1; i <= 50; i++) {
             for (int j = 1; j <= 50; j++) {
+		    //병합되어 있는 공간 병합 풀기
                 if(merge[i][j].r == valueRow && merge[i][j].c == valueCol){
                     merge[i][j] = new Position(i, j);
                     values[i][j] = null;
