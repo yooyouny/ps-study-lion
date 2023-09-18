@@ -11,7 +11,7 @@ public class Solution_64062 {
      */
     public int solution(int[] stones, int k) {
         int min = 0;
-        int max = stones.length;
+        int max = 200_000_000;
         int result = 0;
         //이분탐색으로 가능한 인원 수의 범위를 좁혀가며 계산한다.
         while(min <= max) {
