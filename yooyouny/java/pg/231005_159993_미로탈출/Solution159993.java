@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class Solution159993 {
     class Point{
         int r;
         int c;
