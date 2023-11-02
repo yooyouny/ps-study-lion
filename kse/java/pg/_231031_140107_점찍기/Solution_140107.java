@@ -7,7 +7,7 @@ public class Solution_140107 {
      * 원점과의 거리가 d를 넘으면 점을 찍지 않은다.
      */
     public long solution(int k, int d) {
-        long answer = d/k * 2 - 1;
+        long answer = 0;
 
         // x^2 + y^2 = d^2 를 계산하기 쉽도록 값을 미리 구해준다.
         long maxDistance = (long) Math.pow(d, 2);
