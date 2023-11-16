@@ -23,7 +23,7 @@ public class Solution_12978 {
             map.get(temp[1]).add(new int[]{temp[0], temp[2]});
         }
 
-        // 3. 시작 마을인 1번을 true 로 하고 bfs 를 돌려준다.
+        // 3. 시작 마을인 1번을 true 로 하고 dfs 를 돌려준다.
         canGoTown[1] = true;
         calcLength(map, new boolean[N+1], 1, 0);
 
